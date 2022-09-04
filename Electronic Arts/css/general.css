@@ -1,0 +1,16 @@
+:root {
+    --bg-black: #161616;
+    --grey-one: #f3f3f3;
+    --grey-two: #dedede;
+    --grey-three: #e4e4e4;
+    --grey-four: #a3a3a3;
+    --red: #FF4747;
+    --blue-red-gradient: linear-gradient(#0d1042, #ff4747);
+    font-family:  "ElectronicArtsDisplay", "DM Sans", "Verdana", "Helvetica", "Arial", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

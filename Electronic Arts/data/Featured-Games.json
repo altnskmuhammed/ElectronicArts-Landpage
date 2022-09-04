@@ -1,0 +1,29 @@
+{
+    "data":
+    [
+        {
+            "image" : "src",
+            "alt" : "alt",
+            "title" : "Electronic Arts Inc.",
+            "date" : "Aug 2, 2022",
+            "header" : "Electronic Arts Reports Q1 FY23 Financial Results",
+            "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
+        },
+        {
+            "image" : "src",
+            "alt" : "alt",
+            "title" : "Electronic Arts Inc.",
+            "date" : "Aug 2, 2022",
+            "header" : "Electronic Arts Reports Q1 FY23 Financial Results",
+            "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
+        },
+        {
+            "image" : "src",
+            "alt" : "alt",
+            "title" : "Electronic Arts Inc.",
+            "date" : "Aug 2, 2022",
+            "header" : "Electronic Arts Reports Q1 FY23 Financial Results",
+            "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
+        }
+    ]
+}
