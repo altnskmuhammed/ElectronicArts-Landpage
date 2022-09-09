@@ -1,0 +1,142 @@
+@use 'general.scss' as vars;
+
+.section-three {
+    @include vars.fonts();
+    background-color: vars.$color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: vars.$color-secondary;
+
+    &__header {
+        @include vars.fonts("text-regular");
+        font-size: 2.9rem;
+        line-height: 3;
+        text-align: center;
+    }
+
+    &__list-div {
+        display: flex;
+        border-bottom: vars.$border-width solid vars.$focus-grey;
+        height: 3.8rem;
+        width: 100%;
+        position: relative;
+
+        ul {
+            display: flex;
+            list-style: none;
+            position: absolute;
+            left: 6rem;
+            height: 100%;
+
+            li {
+                border-right: vars.$border-width solid vars.$focus-grey;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            button {
+                height: 60px;
+                background: none;
+                border: none;
+                outline: none;
+                color: vars.$focus-black;
+                padding: 0.5rem 1.4rem;
+                font-size: 1.5rem;
+                
+                &:hover {
+                    @include vars.hover(vars.$focus-black, vars.$focus-grey);
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    cursor: pointer;
+                    background-color: vars.$focus-grey;
+                    color: vars.$focus-black;
+                    border-bottom: calc(vars.$border-width + 1px) solid vars.$color-tertiary;
+                }
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        margin: 4rem 6rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 31.4%;
+        background-color: white;
+        height: 40rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            @include vars.hover;
+            transform: translateY(-0.7rem);
+            box-shadow: 6px 36px 19px -2px rgba(0, 0, 0, 0.4);
+        }
+        
+        &-image {
+            img {
+                width: 100%;
+                height: 17.5rem;
+            }
+        }
+
+        &-description {
+            padding: 0.4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        &-header {
+            @include vars.fonts('text-bold');
+            font-size: 1.2rem;
+            color: vars.$color-tertiary;
+
+            span {
+                margin-left: 1rem;
+                color: vars.$color-secondary;
+            }
+        }
+
+        &-body {
+            @include vars.fonts('text-bold');
+            line-height: 1.4;
+            font-size: 1.3rem;
+
+            p {
+                @include vars.fonts('text-regular');
+                font-size: 1.53rem;
+                margin-top: 0.5rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+        width: 100%;
+
+        button {
+            @include vars.button;
+        }
+    }
+}

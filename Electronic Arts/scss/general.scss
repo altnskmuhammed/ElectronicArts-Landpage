@@ -1,0 +1,76 @@
+$color-primary: #f3f3f3;
+$color-secondary: #161616;
+$color-tertiary: #FF4747;
+
+$border-grey: #a3a3a3;
+$focus-grey: rgba(0, 0, 0, 0.08);
+$focus-black: rgba(22, 22, 22, 0.8);
+
+$border-width: 1px;
+
+@font-face {
+    font-family: 'ElectronicArtsTextRegular';
+    src:  url('../fonts/ElectronicArtsText-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ElectronicArtsTextBold';
+    src:  url('../fonts/ElectronicArtsText-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ElectronicArtsTextLight';
+    src:  url('../fonts/ElectronicArtsText-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ElectronicArtsDisplayBold';
+    src:  url('../fonts/ElectronicArtsDisplay-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ElectronicArtsDisplayRegular';
+    src:  url('../fonts/ElectronicArtsDisplay-Regular.woff2') format('woff2');
+}
+
+@mixin fonts ($string: "text-regular") {
+
+        @if ($string == "text-regular") {
+            font-family : 'ElectronicArtsTextRegular', sans-serif;
+        }
+        @else if ($string == "text-bold") {
+            font-family : 'ElectronicArtsTextBold', sans-serif;
+        }
+        @else if ($string == "text-light") {
+            font-family : 'ElectronicArtsTextLight', sans-serif;
+        }
+        @else if ($string == "display-regular") {
+            font-family : 'ElectronicArtsDisplayRegular', sans-serif;
+        }
+        @else {
+            font-family : 'ElectronicArtsDisplayBold', sans-serif;
+        }
+}
+
+@mixin hover ($color: none, $background-color: none) {
+    cursor: pointer;
+    color: $color;
+    background-color: $background-color;
+}
+
+@mixin button($color: $color-secondary) {
+    background: none;
+    color: $color;
+    border: calc($border-width + 1px) solid $color;
+    border-radius: 0.3rem;
+    width: 11.5rem;
+    height: 4.3rem;
+    font-size: 1.3rem;
+
+    &:hover {
+        @include hover($color);
+        width: 12rem;
+        height: 4.8rem;
+        transition: all 0.1s ease-out;
+    }
+}
