@@ -1,0 +1,758 @@
+@font-face {
+  font-family: "ElectronicArtsTextRegular";
+  src: url("../fonts/ElectronicArtsText-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ElectronicArtsTextBold";
+  src: url("../fonts/ElectronicArtsText-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ElectronicArtsTextLight";
+  src: url("../fonts/ElectronicArtsText-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ElectronicArtsDisplayBold";
+  src: url("../fonts/ElectronicArtsDisplay-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ElectronicArtsDisplayRegular";
+  src: url("../fonts/ElectronicArtsDisplay-Regular.woff2") format("woff2");
+}
+img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ElectronicArtsDisplayRegular", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#question {
+  display: none;
+  position: absolute;
+  top: 4%;
+  width: 100vw;
+  height: 50vh;
+  background-color: #161616;
+  z-index: 999;
+  border-radius: 0.5rem;
+  padding-bottom: 6rem;
+}
+@media screen and (max-width: 1221px) {
+  #question {
+    height: 35vh;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 376px) {
+  #question {
+    width: 100%;
+  }
+}
+#question span {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+}
+#question span a {
+  color: red;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  #question span {
+    font-size: 1rem;
+  }
+}
+#question p {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  font-weight: 300;
+}
+#question .user-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  height: 50%;
+  width: 100vw;
+}
+@media screen and (max-width: 900px) {
+  #question .user-buttons p {
+    font-size: 16px;
+  }
+}
+#question .user-buttons .user-buttons_top {
+  display: flex;
+  justify-content: space-around;
+  flex: 45%;
+}
+@media screen and (max-width: 900px) {
+  #question .user-buttons .user-buttons_top {
+    flex-direction: column;
+    padding-top: 12rem;
+  }
+}
+#question .user-buttons .user-buttons_top button {
+  background-color: #161616;
+  border: none;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 900px) {
+  #question .user-buttons .user-buttons_top button {
+    display: flex;
+  }
+  #question .user-buttons .user-buttons_top button svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 900px) {
+  #question .user-buttons .user-buttons_top button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  #question .user-buttons .user-buttons_top button p {
+    font-size: 0.4rem;
+  }
+}
+#question .user-buttons .user-buttons_top button svg {
+  width: 2rem;
+  height: 2rem;
+}
+#question .user-buttons .user-buttons_top button svg:hover {
+  transition: all 0.5s ease-in;
+  width: 3rem;
+  height: 3rem;
+}
+#question .user-buttons .user-buttons_top button p {
+  color: white;
+  font-size: 1rem;
+}
+#question .user-buttons .user-buttons_bottom {
+  display: flex;
+  justify-content: space-around;
+  flex: 45%;
+}
+@media screen and (max-width: 900px) {
+  #question .user-buttons .user-buttons_bottom {
+    flex-direction: column;
+  }
+  #question .user-buttons .user-buttons_bottom span {
+    font-size: 1rem;
+  }
+}
+#question .user-buttons .user-buttons_bottom button {
+  background-color: #161616;
+  flex-direction: row;
+  border: none;
+}
+#question .user-buttons .user-buttons_bottom button svg {
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (max-width: 900px) {
+  #question .user-buttons .user-buttons_bottom button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+#question .user-buttons .user-buttons_bottom button svg:hover {
+  transition: all 0.5s ease-in;
+  width: 3rem;
+  height: 3rem;
+}
+#question .user-buttons .user-buttons_bottom button p {
+  color: white;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1221px) {
+  #question {
+    display: block;
+  }
+}
+#question .close {
+  width: 100%;
+  height: 40%;
+}
+#question .close svg {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+@media screen and (max-width: 900px) {
+  #question .close {
+    height: 5%;
+  }
+}
+#question .user-buttons img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.contex {
+  display: none;
+  position: absolute;
+  top: 4%;
+  width: 100vw;
+  height: 50vh;
+  background-color: #161616;
+  z-index: 11;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 1221px) {
+  .contex {
+    height: 35vh;
+    width: 100%;
+  }
+}
+.contex .user-buttons {
+  width: 2rem;
+  height: 20rem !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 14rem;
+}
+@media screen and (max-width: 900px) {
+  .contex .user-buttons {
+    height: 14rem !important;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+.contex .user-buttons button {
+  background-color: #161616;
+  border: none;
+}
+@media screen and (max-width: 900px) {
+  .contex .user-buttons button {
+    display: flex;
+  }
+}
+.contex .user-buttons button svg {
+  width: 3rem;
+  height: 3rem;
+}
+.contex .user-buttons button svg:hover {
+  transition: all 0.5s ease-in;
+  width: 4rem;
+  height: 4rem;
+}
+@media screen and (max-width: 600px) {
+  .contex .user-buttons button svg {
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+  }
+  .contex .user-buttons button svg p {
+    font-size: 0.5rem;
+  }
+}
+.contex .user-buttons button p {
+  color: white;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 571px) {
+  .contex .user-buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+    gap: 1rem;
+  }
+}
+.contex .close {
+  width: 25%;
+  height: 10%;
+  padding-top: -4rem;
+}
+.contex .close svg {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+.contex .user-buttons {
+  width: 100%;
+  height: 6rem;
+}
+.contex .user-buttons img {
+  width: 6rem;
+  height: 6rem;
+}
+
+#header__main {
+  position: relative;
+}
+#header__main .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#header__main .content .main-nav {
+  background-color: #161616;
+  height: 2.5rem;
+}
+#header__main .content .main-nav .main-nav_items {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.9rem;
+  margin-top: 0.7rem;
+  margin-right: 0.5rem;
+}
+@media only screen and (max-width: 293px) {
+  #header__main .content .main-nav .main-nav_items {
+    width: 100vw;
+    height: 100%;
+  }
+}
+#header__main .content .main-nav .main-nav_items li {
+  margin-right: 1.8rem;
+}
+#header__main .content .main-nav .main-nav_items li svg {
+  fill: grey;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+#header__main .content .main-nav .main-nav_items li svg:hover {
+  cursor: pointer;
+  fill: white;
+  transition: fill 0.5s ease-out;
+}
+#header__main .content .main-nav .main-nav_items button {
+  color: #f3f3f3;
+  background-color: #161616;
+  width: 1.3rem;
+  height: 1.1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+#header__main .content .main-nav .main-nav_items img {
+  filter: invert(39%) sepia(5%) saturate(97%) hue-rotate(169deg) brightness(93%) contrast(89%);
+  width: 2rem;
+  height: 1rem;
+}
+#header__main .content .main-nav__inner {
+  background-color: #f3f3f3;
+  height: 4rem;
+}
+#header__main .content .main-nav__inner-items {
+  display: flex;
+  align-items: center;
+  height: 75%;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 293px) {
+  #header__main .content .main-nav__inner-items {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1032px) {
+  #header__main .content .main-nav__inner-items li {
+    display: flex;
+  }
+  #header__main .content .main-nav__inner-items li svg {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    align-self: center;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+  }
+  #header__main .content .main-nav__inner-items li button {
+    display: none;
+  }
+  #header__main .content .main-nav__inner-items li img {
+    padding-left: 2rem;
+    width: 80%;
+  }
+}
+#header__main .content .main-nav__inner-items li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2rem;
+}
+#header__main .content .main-nav__inner-items li img {
+  margin-top: 0.8rem;
+}
+#header__main .content .main-nav__inner-items li button {
+  align-self: start;
+  height: 1.2rem;
+  margin: 0.8rem;
+  border: none;
+  font-size: 1.2rem;
+  position: relative;
+  font-family: "ElectronicArtsTextLight", sans-serif;
+  transition: color 0.5s ease-out;
+  /* End of code added by Sama */
+}
+#header__main .content .main-nav__inner-items li button:hover div {
+  visibility: visible;
+}
+#header__main .content .main-nav__inner-items li button svg {
+  display: none;
+}
+#header__main .content .main-nav__inner-items li button .fa-light {
+  display: none;
+}
+#header__main .content .main-nav__inner-items li button .fa-ellipsis-vertical {
+  transition: font-size 0.5s ease-out;
+  padding-right: 2rem;
+}
+#header__main .content .main-nav__inner-items li button div {
+  position: fixed;
+  top: 5.6rem;
+  display: flex;
+  width: max-content;
+  height: auto;
+  z-index: 10;
+  visibility: hidden;
+}
+#header__main .content .main-nav__inner-items li button div ul {
+  padding: 1.5rem 2.8rem 2rem 2.8rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: start;
+}
+#header__main .content .main-nav__inner-items li button div ul h3 {
+  font-family: "ElectronicArtsTextBold", sans-serif;
+  color: #161616;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-decoration-color: #dfdfdf;
+}
+#header__main .content .main-nav__inner-items li button div ul li {
+  color: #161616;
+}
+#header__main .content .main-nav__inner-items li button div ul li:hover {
+  color: #FF4747;
+}
+#header__main .content .main-nav__inner-items li button:hover {
+  cursor: pointer;
+  color: #FF4747;
+  background-color: #f3f3f3;
+  /*   ul {
+      margin-top: 0.8rem;
+      visibility: visible;
+      display: flex;
+      z-index: 9998;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 0.4rem;
+
+      li {
+        color: grey;
+
+        ul {
+          display: block;
+          margin: auto;
+          li {
+
+            &:hover {
+              color: $color-tertiary;
+            }
+          }
+        }
+      }
+    } */
+}
+#header__main .content .main-nav__inner-items li button:hover .fa-ellipsis-vertical {
+  font-size: 1.5rem;
+}
+#header__main .content .main-nav__inner-items li button:hover .fa-sharp {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+#header__main .content .main-nav__inner-items li button:hover div {
+  display: flex;
+  background-color: rgba(243, 243, 243, 0.95);
+  border-radius: 0.4rem;
+}
+
+main .first-section {
+  height: 100vh;
+  width: 100vw;
+}
+main .first-section .image-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100%;
+  background-image: url("../images/Header/Section-one-background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main .first-section .image-box .black {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 34, 34, 0.7);
+}
+main .first-section .image-box .aside {
+  display: none;
+  width: 25rem;
+  height: 55rem;
+  background-color: #f3f3f3;
+  position: absolute;
+  z-index: 2;
+  overflow: scroll;
+}
+@media only screen and (max-width: 400spx) {
+  main .first-section .image-box .aside {
+    width: 100vw;
+    height: 100%;
+  }
+}
+main .first-section .image-box .aside::-webkit-scrollbar {
+  display: none;
+}
+main .first-section .image-box .aside .allgames {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3vw;
+  padding-left: 3rem;
+}
+main .first-section .image-box .aside .allgames p {
+  flex: 50%;
+  font-size: 1.5rem;
+  color: #a3a3a3;
+}
+main .first-section .image-box .aside .allgames p:hover {
+  color: #FF4747;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+main .first-section .image-box .aside .allgames i {
+  flex: 50%;
+  font-size: 1rem;
+  padding-left: 6vw;
+}
+main .first-section .image-box .aside .allgames i:hover {
+  color: #FF4747;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+main .first-section .image-box .aside .first-image {
+  background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2021/04/ea-play-16x9-png.adapt.crop1x1.767w.");
+  width: 80%;
+  height: 30%;
+  margin: 3rem auto;
+  background-size: cover;
+  position: relative;
+}
+main .first-section .image-box .aside .first-image .black {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 34, 34, 0.7);
+}
+main .first-section .image-box .aside .first-image:hover {
+  cursor: pointer;
+}
+main .first-section .image-box .aside .first-image:hover .black {
+  display: block;
+}
+main .first-section .image-box .aside .first-image svg {
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+main .first-section .image-box .aside .first-image svg:hover {
+  width: 70%;
+  height: 70%;
+}
+main .first-section .image-box .aside .second {
+  width: 25rem;
+  height: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
+main .first-section .image-box .aside .second .flex1, main .first-section .image-box .aside .second .flex2, main .first-section .image-box .aside .second .flex3, main .first-section .image-box .aside .second .flex4, main .first-section .image-box .aside .second .flex5, main .first-section .image-box .aside .second .flex6 {
+  width: 9rem;
+  height: 9rem;
+  background-color: aquamarine;
+  overflow: hidden;
+  margin: 1rem;
+  filter: drop-shadow(8px 7px 23px rgb(131, 131, 131));
+  position: relative;
+}
+main .first-section .image-box .aside .second .flex1 .black, main .first-section .image-box .aside .second .flex2 .black, main .first-section .image-box .aside .second .flex3 .black, main .first-section .image-box .aside .second .flex4 .black, main .first-section .image-box .aside .second .flex5 .black, main .first-section .image-box .aside .second .flex6 .black {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 34, 34, 0.7);
+}
+main .first-section .image-box .aside .second .flex1:hover, main .first-section .image-box .aside .second .flex2:hover, main .first-section .image-box .aside .second .flex3:hover, main .first-section .image-box .aside .second .flex4:hover, main .first-section .image-box .aside .second .flex5:hover, main .first-section .image-box .aside .second .flex6:hover {
+  cursor: pointer;
+}
+main .first-section .image-box .aside .second .flex1:hover .black, main .first-section .image-box .aside .second .flex2:hover .black, main .first-section .image-box .aside .second .flex3:hover .black, main .first-section .image-box .aside .second .flex4:hover .black, main .first-section .image-box .aside .second .flex5:hover .black, main .first-section .image-box .aside .second .flex6:hover .black {
+  display: block;
+}
+main .first-section .image-box .aside .second .flex1 img, main .first-section .image-box .aside .second .flex2 img, main .first-section .image-box .aside .second .flex3 img, main .first-section .image-box .aside .second .flex4 img, main .first-section .image-box .aside .second .flex5 img, main .first-section .image-box .aside .second .flex6 img {
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+main .first-section .image-box .aside .second .flex1 img:hover, main .first-section .image-box .aside .second .flex2 img:hover, main .first-section .image-box .aside .second .flex3 img:hover, main .first-section .image-box .aside .second .flex4 img:hover, main .first-section .image-box .aside .second .flex5 img:hover, main .first-section .image-box .aside .second .flex6 img:hover {
+  width: 70%;
+  height: 70%;
+}
+main .first-section .image-box .aside .second .flex1 {
+  background-image: url(../images/Header/new/7.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .first-section .image-box .aside .second .flex2 {
+  background-image: url(../images/Header/new/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .first-section .image-box .aside .second .flex3 {
+  background-image: url(../images/Header/new/3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .first-section .image-box .aside .second .flex4 {
+  background-image: url(../images/Header/new/4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .first-section .image-box .aside .second .flex5 {
+  background-image: url(../images/Header/new/5.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .first-section .image-box .aside .second .flex6 {
+  background-image: url(../images/Header/new/6.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 765px) {
+  main .first-section .image-box {
+    justify-content: flex-end;
+    background-size: cover;
+    background-image: url("../images/Header/Section one background (Small devices).jpg");
+  }
+  main .first-section .image-box img {
+    top: 21rem !important;
+    left: 2rem !important;
+    width: 80% !important;
+  }
+  main .first-section .image-box button {
+    top: 26rem !important;
+    left: 8rem !important;
+    width: 30% !important;
+  }
+}
+main .first-section .image-box img {
+  position: absolute;
+  width: 36rem;
+  top: 15rem;
+  left: 6rem;
+}
+main .first-section .image-box button {
+  background: none;
+  color: #f3f3f3;
+  border: 2px solid #f3f3f3;
+  border-radius: 0.3rem;
+  width: 11.5rem;
+  height: 4.3rem;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 25rem;
+  left: 18rem;
+}
+main .first-section .image-box button:hover {
+  cursor: pointer;
+  color: #f3f3f3;
+  background-color: none;
+  width: 12rem;
+  height: 4.8rem;
+  transition: all 0.1s ease-out;
+}
+@media (max-width: 630px) {
+  main .first-section .image-box button {
+    width: 80%;
+    margin-top: -0.5rem;
+  }
+  main .first-section .image-box button:hover {
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: none;
+    width: 82%;
+    height: 4.8rem;
+    transition: all 0.1s ease-out;
+  }
+}
+main .first-section .image-box button:hover {
+  background: none;
+  color: #f3f3f3;
+  border: 2px solid #f3f3f3;
+  border-radius: 0.3rem;
+  width: 11.5rem;
+  height: 4.3rem;
+  font-size: 1.3rem;
+}
+main .first-section .image-box button:hover:hover {
+  cursor: pointer;
+  color: #f3f3f3;
+  background-color: none;
+  width: 12rem;
+  height: 4.8rem;
+  transition: all 0.1s ease-out;
+}
+@media (max-width: 630px) {
+  main .first-section .image-box button:hover {
+    width: 80%;
+    margin-top: -0.5rem;
+  }
+  main .first-section .image-box button:hover:hover {
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: none;
+    width: 82%;
+    height: 4.8rem;
+    transition: all 0.1s ease-out;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

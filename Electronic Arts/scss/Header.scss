@@ -1,0 +1,771 @@
+@import "general.scss";
+
+$string: "display-regular";
+img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include fonts($string);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+
+
+#question {
+  display: none;
+  position: absolute;
+  top: 4%;
+  width: 100vw;
+  height: 50vh;
+  background-color: $color-secondary;
+  z-index: 999;
+  border-radius: 0.5rem;
+  padding-bottom: 6rem;
+
+  @media screen and (max-width: 1221px) {
+    height: 35vh;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 376px) {
+    width: 100%;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+
+    a {
+      color: red;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    
+    span{
+      font-size: 1rem;
+    }
+  }
+  p {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 4rem; 
+    font-weight: 300;
+  }
+  .user-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    height: 50%;
+    width: 100vw;
+    
+  
+
+
+    @media screen and (max-width: 900px) {
+      
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .user-buttons_top {
+      display: flex;
+      justify-content: space-around;
+      
+   
+      flex: 45%;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+       
+        padding-top: 12rem;
+      }
+
+      button {
+        background-color: $color-secondary;
+        border: none;
+        margin-left: 1rem;
+
+        @media screen and (max-width: 900px) {
+          display: flex;
+          svg {
+            width: 2rem;
+            height: 2rem;
+            @media screen and (max-width: 900px) {
+              width: 1.5rem;
+              height: 1.5rem;
+            
+            }
+          }
+          p {
+            font-size: 0.4rem;
+          }
+        }
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+
+          &:hover {
+            transition: all 0.5s ease-in;
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+        p {
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+    .user-buttons_bottom {
+      display: flex;
+      justify-content: space-around;
+      flex: 45%;
+      
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        span{
+          font-size: 1rem;
+        }
+      }
+      
+     
+
+      button {
+        background-color: $color-secondary;
+flex-direction: row;
+        border: none;
+        @media screen and (max-width: 900px) {
+          
+        }
+      
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          @media screen and (max-width: 900px) {
+            width: 1.5rem;
+            height: 1.5rem;
+          
+          }
+          &:hover {
+            transition: all 0.5s ease-in;
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+        p {
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1221px) {
+    display: block;
+  }
+
+  .close {
+    width: 100%;
+    height: 40%;
+
+    svg {
+      position: absolute;
+      right: 3%;
+      top: 3%;
+      width: 1rem;
+      height: 1rem;
+      fill: white;
+    }
+    @media screen and (max-width: 900px) {
+      height: 5%;
+    }
+  }
+
+  .user-buttons {
+    img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
+.contex {
+  display: none;
+  position: absolute;
+  top: 4%;
+  width: 100vw;
+  height: 50vh;
+  background-color: $color-secondary;
+  z-index: 11;
+  border-radius: 0.5rem;
+
+  @media screen and (max-width: 1221px) {
+    height: 35vh;
+    width: 100%;
+  }
+
+
+  .user-buttons {
+    width: 2rem;
+    height: 20rem !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 14rem;
+
+    @media screen and (max-width: 900px) {
+      height: 14rem !important;
+      padding-left: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    button {
+      background-color: $color-secondary;
+      border: none;
+
+      @media screen and (max-width: 900px) {
+        display: flex;
+      }
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+        &:hover {
+          transition: all 0.5s ease-in;
+          width: 4rem;
+          height: 4rem;
+        }
+
+        @media screen and (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: inherit;
+        
+         
+          p {
+            font-size: 0.5rem;
+          }
+        }
+      }
+      p {
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+
+    @media screen and (max-width: 571px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: inherit;
+      gap: 1rem ;
+    }
+  }
+
+  .close {
+    width: 25%;
+    height: 10%;
+    padding-top: -4rem;
+
+    svg {
+      position: absolute;
+      right: 3%;
+      top: 3%;
+      width: 1rem;
+      height: 1rem;
+      fill: white;
+    }
+  }
+  .user-buttons {
+    width: 100%;
+    height: 6rem;
+    img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
+
+#header__main {
+  position: relative;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .main-nav {
+      background-color: $color-secondary;
+      height: 2.5rem;
+
+      .main-nav_items {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.9rem;
+        margin-top: 0.7rem;
+        margin-right: 0.5rem;
+        @media only screen and (max-width: 293px) {
+          width: 100vw;
+          height: 100%;
+
+        }
+
+        li {
+          margin-right: 1.8rem;
+
+          svg {
+            fill: grey;
+            width: 1.2rem;
+            height: 1.2rem;
+            &:hover {
+              cursor: pointer;
+              fill: white;
+              transition: fill 0.5s ease-out;
+            }
+          }
+        }
+
+        button {
+          color: $color-primary;
+          background-color: $color-secondary;
+          width: 1.3rem;
+          height: 1.1rem;
+          font-size: 1.2rem;
+          border: none;
+        }
+
+        img {
+          filter: invert(39%) sepia(5%) saturate(97%) hue-rotate(169deg)
+            brightness(93%) contrast(89%);
+          width: 2rem;
+          height: 1rem;
+        }
+      }
+
+      &__inner {
+        background-color: $color-primary;
+        height: 4rem;
+
+        &-items {
+          display: flex;
+          align-items: center;
+          height: 75%;
+          justify-content: flex-start;
+          @media only screen and (max-width: 293px) {
+            width: 100%;
+            height: 100%;
+
+          }
+
+          @media only screen and (max-width: 1032px) {
+            li {
+              display: flex;
+
+              svg {
+                display: block;
+                width: 1.2rem;
+                height: 1.2rem;
+                align-self: center;
+                margin-top: 0.8rem;
+                margin-left: 2rem;
+              }
+              button {
+                display: none;
+              }
+              img {
+                padding-left: 2rem;
+                width: 80%;
+              }
+            }
+          }
+         
+
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 2rem;
+
+            img {
+              margin-top: 0.8rem;
+            }
+            button {
+              align-self: start;
+              height: 1.2rem;
+              margin: 0.8rem;
+              border: none;
+              font-size: 1.2rem;
+              position: relative;
+              &:hover{
+                div{
+                  visibility: visible;
+                
+                }
+              }
+              
+
+              svg {
+                display: none;
+              }
+              @include fonts("text-light");
+
+              transition: color 0.5s ease-out;
+              .fa-light {
+                display: none;
+              }
+
+              .fa-ellipsis-vertical {
+                transition: font-size 0.5s ease-out;
+                padding-right: 2rem;
+              }
+
+             
+              div {
+                position: fixed;
+                top: 5.6rem;
+                display: flex;
+                width: max-content;
+                height: auto;
+                z-index: 10;
+                visibility: hidden;
+                
+
+               
+
+                ul {
+                  padding: 1.5rem 2.8rem 2rem 2.8rem;
+                  display: flex;
+                  gap: 0.5rem;
+                  flex-direction: column;
+                  justify-content: start;
+              
+
+                  h3 {
+                    @include fonts("text-bold");
+                    color: $color-secondary;
+                    text-decoration: underline;
+                    text-underline-offset: 1rem;
+                    text-decoration-thickness: 0.2rem;
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                    text-decoration-color: $border-light-grey;
+                  }
+
+                  li {
+                    color: $color-secondary;
+
+                    &:hover {
+                      
+                      color: $color-tertiary;
+                    }
+                  }
+                }
+              }
+
+              /* End of code added by Sama */
+
+              &:hover {
+                @include hover($color-tertiary, $color-primary);
+
+                .fa-ellipsis-vertical {
+                  font-size: 1.5rem;
+                }
+                .fa-sharp {
+                  transform: rotate(180deg);
+                  -webkit-transform: rotate(180deg);
+                }
+
+                div {
+                  display: flex;
+                  background-color: rgba(243, 243, 243, 0.95);
+                  border-radius: 0.4rem;
+                }
+
+              /*   ul {
+                  margin-top: 0.8rem;
+                  visibility: visible;
+                  display: flex;
+                  z-index: 9998;
+                  justify-content: center;
+                  background-color: rgba(255, 255, 255, 0.8);
+                  border-radius: 0.4rem;
+
+                  li {
+                    color: grey;
+
+                    ul {
+                      display: block;
+                      margin: auto;
+                      li {
+
+                        &:hover {
+                          color: $color-tertiary;
+                        }
+                      }
+                    }
+                  }
+                } */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  .first-section {
+    height: 100vh;
+    width: 100vw;
+    .image-box {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
+      width: 100vw;
+      height: 100%;
+      background-image: url("../images/Header/Section-one-background.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      .black{
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(36, 34, 34, 0.7);
+      }
+     
+      .aside{
+        display: none;
+        width: 25rem;
+        height: 55rem;
+        background-color: $color-primary;
+        position:absolute;
+        
+        
+        z-index: 2;
+        overflow: scroll;
+
+        @media only screen and (max-width: 400spx) {
+          width: 100vw;
+          height: 100%;
+
+        }
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        .allgames{
+          width: 100%;
+          height: 4rem;
+          display: flex ;
+          align-items: center;
+          justify-content: space-around;
+          padding-top: 3vw;
+          
+          padding-left: 3rem;
+          p{
+            flex: 50%;
+            font-size: 1.5rem;
+            color: $border-grey;
+            
+            &:hover{
+              color:$color-tertiary ;
+              transition: all 0.5s ease-in;
+              cursor: pointer;
+              
+            }
+          }
+          
+          i{
+            flex: 50%;
+            font-size: 1rem;
+            padding-left: 6vw;
+            &:hover{
+              color:$color-tertiary ;
+              transition: all 0.5s ease-in;
+              cursor: pointer;
+              
+            }
+          }
+        }
+      
+        .first-image{
+          background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2021/04/ea-play-16x9-png.adapt.crop1x1.767w.");
+          width: 80%;
+          height: 30%;
+          margin:3rem auto ;
+          background-size: cover;
+          position: relative;
+          .black{
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(36, 34, 34, 0.7);
+          }
+
+          &:hover{
+            cursor: pointer;
+
+            .black{
+              display: block;
+            }
+          }
+        
+          svg{
+            margin: auto;
+            position: absolute;
+            top: 45%;
+            left: 48%;
+            width: 50%;
+            height: 50%;
+            transform: translate(-50% , -50%);
+            transition: all 0.2s ease-in;
+            &:hover{
+              width: 70%;
+              height: 70%;
+            }
+      
+           
+          }
+        }
+
+        .second{
+          width: 25rem;
+          height: 30rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-self: center;
+        
+          
+         
+          .flex1 , .flex2 , .flex3 , .flex4 , .flex5 , .flex6 {
+            width: 9rem;
+            height: 9rem;
+            background-color: aquamarine;
+            overflow: hidden;
+            margin: 1rem;
+            filter: drop-shadow(8px 7px 23px rgb(131, 131, 131));
+            position: relative;
+
+            .black{
+              display: none;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(36, 34, 34, 0.7);
+            }
+
+            &:hover{
+              cursor: pointer;
+
+              .black{
+                display: block;
+              }
+            }
+            
+            img{
+              margin: auto;
+              position: absolute;
+              top: 45%;
+              left: 45%;
+              width: 50%;
+              height: 50%;
+              transform: translate(-50% , -50%);
+              transition: all 0.2s ease-in;
+              &:hover{
+                width: 70%;
+                height: 70%;
+              }
+        
+            }
+
+          }
+          .flex1{
+            background-image: url(../images/Header/new/7.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+ 
+          }
+          .flex2{
+            background-image: url(../images/Header/new/1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          .flex3{
+            background-image: url(../images/Header/new/3.jpg);
+            background-size: contain;
+               background-repeat: no-repeat;
+          }
+          .flex4{
+            background-image: url(../images/Header/new/4.jpg);
+            background-size: contain;
+               background-repeat: no-repeat;
+          }
+          .flex5{
+            background-image: url(../images/Header/new/5.jpg);
+            background-size: contain;
+             background-repeat: no-repeat;
+          }
+          .flex6{
+            background-image: url(../images/Header/new/6.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+    
+          }
+
+        }
+        
+      }
+
+      @media only screen and (max-width: 765px) {
+        justify-content: flex-end;
+
+        img {
+          top: 21rem !important;
+          left: 2rem !important;
+          width: 80% !important;
+        }
+        button {
+          top: 26rem !important;
+          left: 8rem !important;
+          width: 30% !important;
+        }
+        background-size: cover;
+
+        background-image: url("../images/Header/Section\ one\ background\ \(Small\ devices\).jpg");
+      }
+
+      img {
+
+        position: absolute;
+        width: 36rem;
+        top: 15rem;
+        left: 6rem;
+      }
+      button {
+        @include button($color-primary);
+        position: absolute;
+        top: 25rem;
+        left: 18rem;
+
+        &:hover {
+          @include button($color-primary);
+        }
+      }
+    }
+  }
+}
