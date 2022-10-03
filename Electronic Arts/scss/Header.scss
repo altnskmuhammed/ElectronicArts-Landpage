@@ -42,8 +42,11 @@ li {
   span {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-size: 1.2rem;
     color: white;
+    position: absolute;
+    bottom: 25px;
 
     a {
       color: red;
@@ -59,8 +62,11 @@ li {
   p {
     color: white;
     font-size: 1.5rem;
-    padding-left: 4rem; 
+    position: absolute;
+    top: 25px;
     font-weight: 300;
+ 
+    
   }
   .user-buttons {
     display: flex;
@@ -69,13 +75,16 @@ li {
     align-items: center;
     gap: 2rem;
     height: 50%;
-    width: 100vw;
+    
     
   
 
 
     @media screen and (max-width: 900px) {
       
+      span{
+        bottom: 2px;
+      }
 
       p {
         font-size: 16px;
@@ -83,24 +92,53 @@ li {
     }
 
     .user-buttons_top {
+      position: absolute;
+     
+      top: 20%;
+    
       display: flex;
       justify-content: space-around;
       
    
       flex: 45%;
       @media screen and (max-width: 900px) {
+        position: absolute;
+        top: 0;
         flex-direction: column;
-       
-        padding-top: 12rem;
+         left: 15%;
+        gap:1rem;
+      }
+      @media screen and (max-width: 550px) {
+        
+   
+        left: 10%;
+           gap:0.8rem;
+      }
+      @media screen and (max-width: 400px) {
+        
+   
+        left: 7%;
+           gap:0.6rem;
       }
 
-      button {
+      div {
         background-color: $color-secondary;
         border: none;
         margin-left: 1rem;
+         display: flex;
+         width: 12rem;
+        align-items: center;
+        justify-content: space-around;
+        p{
+          display: flex;
+            flex-wrap: wrap;
+        }
 
         @media screen and (max-width: 900px) {
-          display: flex;
+          display: block;
+          position: relative;
+          top: 3rem;
+          left: 65%;
           svg {
             width: 2rem;
             height: 2rem;
@@ -112,6 +150,7 @@ li {
           }
           p {
             font-size: 0.4rem;
+            
           }
         }
 
@@ -132,13 +171,18 @@ li {
       }
     }
     .user-buttons_bottom {
+      position: absolute;
+     
+      top: 48%;
+    
       display: flex;
-      justify-content: space-around;
-      flex: 45%;
+      justify-content: space-between;
       
 
       @media screen and (max-width: 900px) {
         flex-direction: column;
+        left: 25%;
+
         span{
           font-size: 1rem;
         }
@@ -146,23 +190,30 @@ li {
       
      
 
-      button {
+      div {
         background-color: $color-secondary;
-flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         border: none;
+        width: 12rem;
         @media screen and (max-width: 900px) {
           
+      @media screen and (max-width: 900px) {
+        display: block;
+        position: relative;
+        margin: 0.7rem;
+        
+        left: 25%;
+      }
         }
       
 
         svg {
           width: 2rem;
           height: 2rem;
-          @media screen and (max-width: 900px) {
-            width: 1.5rem;
-            height: 1.5rem;
-          
-          }
+        
           &:hover {
             transition: all 0.5s ease-in;
             width: 3rem;
@@ -172,6 +223,7 @@ flex-direction: row;
         p {
           color: white;
           font-size: 1rem;
+          text-align: center;
         }
       }
     }

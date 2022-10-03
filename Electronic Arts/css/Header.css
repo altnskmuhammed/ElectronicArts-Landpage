@@ -59,8 +59,11 @@ li {
 #question span {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   font-size: 1.2rem;
   color: white;
+  position: absolute;
+  bottom: 25px;
 }
 #question span a {
   color: red;
@@ -74,7 +77,8 @@ li {
 #question p {
   color: white;
   font-size: 1.5rem;
-  padding-left: 4rem;
+  position: absolute;
+  top: 25px;
   font-weight: 300;
 }
 #question .user-buttons {
@@ -84,98 +88,137 @@ li {
   align-items: center;
   gap: 2rem;
   height: 50%;
-  width: 100vw;
 }
 @media screen and (max-width: 900px) {
+  #question .user-buttons span {
+    bottom: 2px;
+  }
   #question .user-buttons p {
     font-size: 16px;
   }
 }
 #question .user-buttons .user-buttons_top {
+  position: absolute;
+  top: 20%;
   display: flex;
   justify-content: space-around;
   flex: 45%;
 }
 @media screen and (max-width: 900px) {
   #question .user-buttons .user-buttons_top {
+    position: absolute;
+    top: 0;
     flex-direction: column;
-    padding-top: 12rem;
+    left: 15%;
+    gap: 1rem;
   }
 }
-#question .user-buttons .user-buttons_top button {
+@media screen and (max-width: 550px) {
+  #question .user-buttons .user-buttons_top {
+    left: 10%;
+    gap: 0.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #question .user-buttons .user-buttons_top {
+    left: 7%;
+    gap: 0.6rem;
+  }
+}
+#question .user-buttons .user-buttons_top div {
   background-color: #161616;
   border: none;
   margin-left: 1rem;
+  display: flex;
+  width: 12rem;
+  align-items: center;
+  justify-content: space-around;
+}
+#question .user-buttons .user-buttons_top div p {
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 900px) {
-  #question .user-buttons .user-buttons_top button {
-    display: flex;
+  #question .user-buttons .user-buttons_top div {
+    display: block;
+    position: relative;
+    top: 3rem;
+    left: 65%;
   }
-  #question .user-buttons .user-buttons_top button svg {
+  #question .user-buttons .user-buttons_top div svg {
     width: 2rem;
     height: 2rem;
   }
 }
 @media screen and (max-width: 900px) and (max-width: 900px) {
-  #question .user-buttons .user-buttons_top button svg {
+  #question .user-buttons .user-buttons_top div svg {
     width: 1.5rem;
     height: 1.5rem;
   }
 }
 @media screen and (max-width: 900px) {
-  #question .user-buttons .user-buttons_top button p {
+  #question .user-buttons .user-buttons_top div p {
     font-size: 0.4rem;
   }
 }
-#question .user-buttons .user-buttons_top button svg {
+#question .user-buttons .user-buttons_top div svg {
   width: 2rem;
   height: 2rem;
 }
-#question .user-buttons .user-buttons_top button svg:hover {
+#question .user-buttons .user-buttons_top div svg:hover {
   transition: all 0.5s ease-in;
   width: 3rem;
   height: 3rem;
 }
-#question .user-buttons .user-buttons_top button p {
+#question .user-buttons .user-buttons_top div p {
   color: white;
   font-size: 1rem;
 }
 #question .user-buttons .user-buttons_bottom {
+  position: absolute;
+  top: 48%;
   display: flex;
-  justify-content: space-around;
-  flex: 45%;
+  justify-content: space-between;
 }
 @media screen and (max-width: 900px) {
   #question .user-buttons .user-buttons_bottom {
     flex-direction: column;
+    left: 25%;
   }
   #question .user-buttons .user-buttons_bottom span {
     font-size: 1rem;
   }
 }
-#question .user-buttons .user-buttons_bottom button {
+#question .user-buttons .user-buttons_bottom div {
   background-color: #161616;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   border: none;
+  width: 12rem;
 }
-#question .user-buttons .user-buttons_bottom button svg {
+@media screen and (max-width: 900px) and (max-width: 900px) {
+  #question .user-buttons .user-buttons_bottom div {
+    display: block;
+    position: relative;
+    margin: 0.7rem;
+    left: 25%;
+  }
+}
+#question .user-buttons .user-buttons_bottom div svg {
   width: 2rem;
   height: 2rem;
 }
-@media screen and (max-width: 900px) {
-  #question .user-buttons .user-buttons_bottom button svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-#question .user-buttons .user-buttons_bottom button svg:hover {
+#question .user-buttons .user-buttons_bottom div svg:hover {
   transition: all 0.5s ease-in;
   width: 3rem;
   height: 3rem;
 }
-#question .user-buttons .user-buttons_bottom button p {
+#question .user-buttons .user-buttons_bottom div p {
   color: white;
   font-size: 1rem;
+  text-align: center;
 }
 @media screen and (max-width: 1221px) {
   #question {
