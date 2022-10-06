@@ -1,0 +1,59 @@
+{
+    "data":
+    [
+        {
+            "id" : 1,
+            "image" : "images/Section Three/EAPlay/EA Play 1.jpg",
+            "alt" : "EA Play 1",
+            "title" : "Madden NFL",
+            "date" : "Feb 17, 2022",
+            "header" : "Get More Madden NFL 22 With EA Play",
+            "description" : "Madden NFL 22 enters the Play List on February 17, 2022"
+        },
+        {
+            "id" : 2,
+            "image" : "images/Section Three/EAPlay/EA Play 2.jpg",
+            "alt" : "EA Play 2",
+            "title" : "Madden NFL",
+            "date" : "May 14, 2021",
+            "header" : "Play the Mass Effect Legendary Edition with EA Play* Pro",
+            "description" : "Experience the cinematic saga now remastered and optimized for 4K Ultra HD"
+        },
+        {
+            "id" : 3,
+            "image" : "images/Section Three/EAPlay/EA Play 3.jpg",
+            "alt" : "EA Play 3",
+            "title" : "Madden NFL",
+            "date" : "May 3, 2021",
+            "header" : "Get More FIFA 21 With EA Play - EA SPORTS Official Site",
+            "description" : "FIFA 21 is now on the Play List with EA Play."
+        },
+        {
+            "id" : 4,
+            "image" : "images/Section Three/EAPlay/EA Play 4.jpg",
+            "alt" : "EA Play 4",
+            "title" : "Madden NFL",
+            "date" : "Apr 1, 2021",
+            "header" : "EA Play Spotlight - April 2021",
+            "description" : "Learn all about the latest games and rewards now available with your EA Play membership."
+        },
+        {
+            "id" : 5,
+            "image" : "images/Section Three/EAPlay/EA Play 5.jpg",
+            "alt" : "EA Play 5",
+            "title" : "Madden NFL",
+            "date" : "Mar 18, 2021",
+            "header" : "EA Play Now Available on Xbox Game Pass for PC via the EA app",
+            "description" : "The EA app, our next-generation PC platform, is in open beta, we’re joining forces with Xbox to give more games to PC players."
+        },
+        {
+            "id" : 6,
+            "image" : "images/Section Three/EAPlay/EA Play 6.jpg",
+            "alt" : "EA Play 6",
+            "title" : "Madden NFL",
+            "date" : "Mar 1, 2021",
+            "header" : "EA Play Spotlight - March 2021",
+            "description" : "Learn all about the latest rewards and games now available with your EA Play or EA Play Pro membership."
+        }
+    ]
+}

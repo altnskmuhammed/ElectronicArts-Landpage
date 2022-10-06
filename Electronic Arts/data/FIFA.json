@@ -1,0 +1,59 @@
+{
+    "data":
+    [
+        {
+            "id" : 1,
+            "image" : "images/Section Three/FIFA/FIFA 1.jpg",
+            "alt" : "FIFA 1",
+            "title" : "FIFA",
+            "date" : "Sep 13, 2022",
+            "header" : "FIFA 23 | Pitch Notes - PC FAQ - EA SPORTS",
+            "description" : "PC FIFA 23 players will be able to experience all new generation features and updates, including HyperMotion 2 Gameplay Technology, Advanced 11v11 Match Capture, Machine Learning, and more."
+        },
+        {
+            "id" : 2,
+            "image" : "images/Section Three/FIFA/FIFA 2.jpg",
+            "alt" : "FIFA 2",
+            "title" : "FIFA",
+            "date" : "Aug 31, 2022",
+            "header" : "FIFA 23 | Pitch Notes - FUT Chemistry Update - EA SPORTS",
+            "description" : "With FUT 23, our aim is to increase squad variety to enable more diverse teams, make squad building easier and remove common pain points."
+        },
+        {
+            "id" : 3,
+            "image" : "images/Section Three/FIFA/FIFA 3.jpg",
+            "alt" : "FIFA 3",
+            "title" : "FIFA",
+            "date" : "Aug 26, 2022",
+            "header" : "FIFA 23 All Leagues and Clubs List - Electronic Arts",
+            "description" : "See the full list of playable clubs and leagues in EA SPORTS FIFA 23."
+        },
+        {
+            "id" : 4,
+            "image" : "images/Section Three/FIFA/FIFA 4.jpg",
+            "alt" : "FIFA 4",
+            "title" : "FIFA",
+            "date" : "Aug 11, 2022",
+            "header" : "FIFA 23 | Pitch Notes - FUT Deep Dive - EA SPORTS Official",
+            "description" : "FUT 23 brings a new way to play and earn rewards with FUT Moments, a total overhaul to the Chemistry system that gives you more squad-building flexibility, cross-play, new FUT Heroes, and much more as you build your dream squ…"
+        },
+        {
+            "id" : 5,
+            "image" : "images/Section Three/FIFA/FIFA 5.jpg",
+            "alt" : "FIFA 5",
+            "title" : "FIFA",
+            "date" : "Aug 8, 2022",
+            "header" : "FIFA 23 | Pitch Notes - Pro Clubs/VOLTA FOOTBALL Deep Dive - EA SPORTS",
+            "description" : "As we look at our cross-play future, we’re focused on matchmaking in Pro Clubs, VOLTA, and FUT Co-op, as well as cross-platform lobby, invites and ultimately cross-platform Pro Clubs."
+        },
+        {
+            "id" : 6,
+            "image" : "images/Section Three/FIFA/FIFA 6.jpg",
+            "alt" : "FIFA 6",
+            "title" : "FIFA",
+            "date" : "Aug 1, 2022",
+            "header" : "FIFA 23 | Pitch Notes - Career Deep Dive - EA SPORTS",
+            "description" : "Our additions to FIFA 23 have been primarily driven by the goal of giving more freedom to how you approach Career Mode, both in terms of gameplay and customization."
+        }
+    ]
+}

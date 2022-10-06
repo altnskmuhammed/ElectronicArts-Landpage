@@ -1,0 +1,59 @@
+{
+    "data":
+    [
+        {
+            "id" : 1,
+            "image" : "images/Section Three/Madden NFL/MaddenNFL 1.jpg",
+            "alt" : "MaddenNFL 1",
+            "title" : "Madden",
+            "date" : "Sep 8, 2022",
+            "header" : "Madden NFL 23 - Title Update September 8, 2022",
+            "description" : "Learn more about the updates coming to Madden NFL 23"
+        },
+        {
+            "id" : 2,
+            "image" : "images/Section Three/Madden NFL/MaddenNFL 2.jpg",
+            "alt" : "MaddenNFL 2",
+            "title" : "MaddenNFL 23",
+            "date" : "Sep 2, 2022",
+            "header" : "Ultimate Kickoff Tournament Announcement",
+            "description" : "Watch the best Madden NFL 23 players compete for a share of the $180,000 prize pool! Plus, earn Ultimate Team rewards just for watching the tournament on Twitch."
+        },
+        {
+            "id" : 3,
+            "image" : "images/Section Three/Madden NFL/MaddenNFL 3.jpg",
+            "alt" : "MaddenNFL 3",
+            "title" : "MaddenNFL 23",
+            "date" : "Aug 24, 2022",
+            "header" : "Madden NFL 23 - Madden Ultimate Team Pack Probability",
+            "description" : "Build your dream Madden Ultimate Team roster more efficiently with the Pack Probability update in Madden NFL 23."
+        },
+        {
+            "id" : 4,
+            "image" : "images/Section Three/Madden NFL/MaddenNFL 4.jpg",
+            "alt" : "MaddenNFL 4",
+            "title" : "MaddenNFL 23",
+            "date" : "Aug 16, 2022",
+            "header" : "Madden NFL 23 Soundtrack: Hit-Boy, Cordae, Pusha T, Kendrick Lamar",
+            "description" : "Listen to the Madden NFL 23 soundtrack, featuring Hit-Boy, Cordae, Pusha T, Kendrick Lamar and more!"
+        },
+        {
+            "id" : 5,
+            "image" : "images/Section Three/Madden NFL/MaddenNFL 5.jpg",
+            "alt" : "MaddenNFL 5",
+            "title" : "Madden",
+            "date" : "Aug 9, 2022",
+            "header" : "Madden NFL 23 - Madden Ultimate Team",
+            "description" : "Learn more about new features coming to Ultimate Team in Madden NFL 23"
+        },
+        {
+            "id" : 6,
+            "image" : "images/Section Three/Madden NFL/MaddenNFL 6.jpg",
+            "alt" : "MaddenNFL 6",
+            "title" : "Madden",
+            "date" : "Aug 8, 2022",
+            "header" : "Gridiron Notes: Madden 23 Face of the Franchise",
+            "description" : "Everything you want to know about Face of the Franchise"
+        }
+    ]
+}

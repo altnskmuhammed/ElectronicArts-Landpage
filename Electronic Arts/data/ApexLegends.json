@@ -1,0 +1,59 @@
+{
+    "data":
+    [
+        {
+            "id" : 1,
+            "image" : "images/Section Three/Apex Legends/Apex Legends 1.jpg",
+            "alt" : "Apex Legends 1",
+            "title" : "Apex Legends",
+            "date" : "Sep 16, 2022",
+            "header" : "An update on iron sights ",
+            "description" : "Learn how Apex Legends will be improving the competitive integrity of iron sights now and in the future."
+        },
+        {
+            "id" : 2,
+            "image" : "images/Section Three/Apex Legends/Apex Legends 2.jpg",
+            "alt" : "Apex Legends 2",
+            "title" : "Apex Legends",
+            "date" : "Sep 15, 2022",
+            "header" : "APEX LEGENDS™ BEAST OF PREY COLLECTION EVENT",
+            "description" : "From September 20th to October 4th, Play Gun Run - a brand new limited-time mode and check out Loba’s Heirloom."
+        },
+        {
+            "id" : 3,
+            "image" : "images/Section Three/Apex Legends/Apex Legends 3.jpg",
+            "alt" : "Apex Legends 3",
+            "title" : "Apex Legends",
+            "date" : "Sep 14, 2022",
+            "header" : "The Apex Legends™ Global Series Year 3",
+            "description" : "Registration for Year 3 of the ALGS is now open. Learn More Here!"
+        },
+        {
+            "id" : 4,
+            "image" : "images/Section Three/Apex Legends/Apex Legends 4.jpg",
+            "alt" : "Apex Legends 4",
+            "title" : "Apex Legends",
+            "date" : "Sep 12, 2022",
+            "header" : "Haunt your foes with the new Prime Gaming Octane Bundle",
+            "description" : "Get the Octane Radioactive skin and more free with your Prime membership from September 15th –  October 20th"
+        },
+        {
+            "id" : 5,
+            "image" : "images/Section Three/Apex Legends/Apex Legends 5.jpg",
+            "alt" : "Apex Legends 5",
+            "title" : "Apex Legends",
+            "date" : "Aug 18, 2022",
+            "header" : "Lead the hunt with the new Prime Gaming Vantage Bundle",
+            "description" : "Get the Vantage Troop Leader skin and more free with your Prime membership from August 18th –  September 15th"
+        },
+        {
+            "id" : 6,
+            "image" : "images/Section Three/Apex Legends/Apex Legends 6.jpg",
+            "alt" : "Apex Legends 6",
+            "title" : "Apex Legends",
+            "date" : "Aug 8, 2022",
+            "header" : "Apex Legends: Hunted Patch Notes",
+            "description" : "Discover the will to survive with a new Legend and explore a reforged Kings Canyon when Apex Legends: Hunted launches on August 9th."
+        }
+    ]
+}

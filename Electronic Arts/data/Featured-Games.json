@@ -2,28 +2,46 @@
     "data":
     [
         {
-            "image" : "src",
-            "alt" : "alt",
-            "title" : "Electronic Arts Inc.",
-            "date" : "Aug 2, 2022",
-            "header" : "Electronic Arts Reports Q1 FY23 Financial Results",
-            "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
+            "id" : 1,
+            "bg-image" : "images/Section Two/Fifa-23.jpg",
+            "alt" : "FIFA 23",
+            "logo" : "images/Section Two/Fifa-23-Logo.svg",
+            "link" : "https://www.ea.com/games/fifa/fifa-23"
         },
         {
-            "image" : "src",
-            "alt" : "alt",
-            "title" : "Electronic Arts Inc.",
-            "date" : "Aug 2, 2022",
-            "header" : "Electronic Arts Reports Q1 FY23 Financial Results",
-            "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
+            "id" : 2,
+            "bg-image" : "images/Section Two/Madden-23.jpg",
+            "alt" : "Madden NFL 23",
+            "logo" : "images/Section Two/Madden-23-Logo.svg",
+            "link" : "https://www.ea.com/games/madden-nfl/madden-nfl-23"
         },
         {
-            "image" : "src",
-            "alt" : "alt",
-            "title" : "Electronic Arts Inc.",
-            "date" : "Aug 2, 2022",
-            "header" : "Electronic Arts Reports Q1 FY23 Financial Results",
-            "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
+            "id" : 3,
+            "bg-image" : "images/Section Two/F122.png",
+            "alt" : "F1 22",
+            "logo" : "images/Section Two/F122-Logo.png",
+            "link" : "https://www.ea.com/games/fifa/fifa-23"
+        },
+        {
+            "id" : 4,
+            "bg-image" : "images/Section Two/Battlefield-2042.jpg",
+            "alt" : "Battlefield 2042",
+            "logo" : "images/Section Two/Battlefield-2042-Logo.svg",
+            "link" : "https://www.ea.com/games/battlefield/battlefield-2042"
+        },
+        {
+            "id" : 5,
+            "bg-image" : "images/Section Two/Apex-Legends.jpg",
+            "alt" : "Apex Legends ",
+            "logo" : "images/Section Two/Apex-Legends-Logo.svg",
+            "link" : "https://www.ea.com/games/apex-legends"
+        },
+        {
+            "id" : 6,
+            "bg-image" : "images/Section Two/The-Sims-4.jpg",
+            "alt" : "The Sims 4",
+            "logo" : "images/Section Two/The-Sims-4-Logo.svg",
+            "link" : "ea.com/games/the-sims/the-sims-4"
         }
     ]
 }

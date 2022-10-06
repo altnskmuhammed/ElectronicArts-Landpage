@@ -1,0 +1,59 @@
+{
+    "data":
+    [
+        {
+            "id" : 1,
+            "image" : "images/Section Three/The Sims 4/The Sims 4 1.png",
+            "alt" : "The Sims 4 1",
+            "title" : "Electronic Arts Inc.",
+            "date" : "Sep 14, 2022",
+            "header" : "Play The Sims 4 for Free Beginning October 18",
+            "description" : "More updates to follow during a special stream, Behind The Sims Summit"
+        },
+        {
+            "id" : 2,
+            "image" : "images/Section Three/The Sims 4/The Sims 4 2.jpg",
+            "alt" : "The Sims 4 2",
+            "title" : "The Sims 4",
+            "date" : "Sep 13, 2022",
+            "header" : "Update 09/13/2022",
+            "description" : "Groundhog Day"
+        },
+        {
+            "id" : 3,
+            "image" : "images/Section Three/The Sims 4/The Sims 4 3.jpg",
+            "alt" : "The Sims 4",
+            "title" : "The Sims 4",
+            "date" : "Sep 5, 2022",
+            "header" : "Collaborating with our Community on The Sims 4 Desert Luxe & First Fits Kit…",
+            "description" : "You Make The Sims™ featuring Aveline and XUrbanSimsX"
+        },
+        {
+            "id" : 4,
+            "image" : "images/Section Three/The Sims 4/The Sims 4 4.jpg",
+            "alt" : "The Sims 4 4",
+            "title" : "The Sims 4",
+            "date" : "Aug 30, 2022",
+            "header" : "Update 08/30/2022",
+            "description" : "Welcome to Town with three New Scenarios!"
+        },
+        {
+            "id" : 5,
+            "image" : "images/Section Three/The Sims 4/The Sims 4 5.png",
+            "alt" : "The Sims 4 5",
+            "title" : "The Sims 4",
+            "date" : "Aug 10, 2022",
+            "header" : "Sims Delivery Express",
+            "description" : "July-September 2022"
+        },
+        {
+            "id" : 6,
+            "image" : "images/Section Three/The Sims 4/The Sims 4 6.png",
+            "alt" : "The Sims 4 6",
+            "title" : "Accessibility",
+            "date" : "Aug 4, 2022",
+            "header" : "The Sims™ 4 and Neurodiversity",
+            "description" : "New Sims™ 4 Expansion Creates New Frontier for Neurodiversity at EA"
+        }
+    ]
+}

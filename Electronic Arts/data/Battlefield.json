@@ -1,0 +1,59 @@
+{
+    "data":
+    [
+        {
+            "id" : 1,
+            "image" : "images/Section Three/Battlefield/Battlefield 1.jpg",
+            "alt" : "Battlefield 1",
+            "title" : "Electronic Arts Inc.",
+            "date" : "Sep 8, 2022",
+            "header" : "All-In On Battlefield - Ridgeline Developing Next Campaign",
+            "description" : "An Update from Byron Beede on the Future of Battlefield"
+        },
+        {
+            "id" : 2,
+            "image" : "images/Section Three/Battlefield/Battlefield 2.png",
+            "alt" : "Battlefield 2",
+            "title" : "Battlefield 2024",
+            "date" : "Aug 30, 2022",
+            "header" : "Battlefield Briefing - Welcome to Season 2: Master of Arms",
+            "description" : "Battlefield 2042, Season 2 Overview"
+        },
+        {
+            "id" : 3,
+            "image" : "images/Section Three/Battlefield/Battlefield 3.jpg",
+            "alt" : "Battlefield 3",
+            "title" : "Battlefield 2024",
+            "date" : "Aug 29, 2022",
+            "header" : "BATTLEFIELD 2042 UPDATE #2.0",
+            "description" : "Find out what’s new in Battlefield 2042’s Season 2 Update, Master of Arms"
+        },
+        {
+            "id" : 4,
+            "image" : "images/Section Three/Battlefield/Battlefield 4.jpg",
+            "alt" : "Battlefield 4",
+            "title" : "Battlefield 2024",
+            "date" : "Aug 22, 2022",
+            "header" : "Battlefield Briefing - Development Update, August 2022",
+            "description" : "Learn what we’ve been working on in our second Battlefield 2042 Development Update"
+        },
+        {
+            "id" : 5,
+            "image" : "images/Section Three/Battlefield/Battlefield 5.jpg",
+            "alt" : "Battlefield 5",
+            "title" : "Battlefield 2024",
+            "date" : "Aug 1, 2022",
+            "header" : "BATTLEFIELD 2042 UPDATE #1.2",
+            "description" : "Update #1.2 for Battlefield 2042, Season 1"
+        },
+        {
+            "id" : 6,
+            "image" : "images/Section Three/Battlefield/Battlefield 6.jpg",
+            "alt" : "Battlefield 6",
+            "title" : "Battlefield 2024",
+            "date" : "Jul 5, 2022",
+            "header" : "BATTLEFIELD 2042 UPDATE #1.1",
+            "description" : "Update #1.1 for Battlefield 2042, Season 1"
+        }
+    ]
+}

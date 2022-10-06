@@ -2,7 +2,8 @@
     "data":
     [
         {
-            "image" : "images/Section Three/EA News 1.png",
+            "id" : 1,
+            "image" : "images/Section Three/EANews/EA News 1.png",
             "alt" : "EA News 1",
             "title" : "Electronic Arts Inc.",
             "date" : "Aug 2, 2022",
@@ -10,7 +11,8 @@
             "description" : "Electronic Arts Inc. (NASDAQ: EA) today announced preliminary financial results for its first fiscal quarter ended June 30, 2022."
         },
         {
-            "image" : "images/Section Three/EA News 2.png",
+            "id" : 2,
+            "image" : "images/Section Three/EANews/EA News 2.png",
             "alt" : "EA News 2",
             "title" : "Electronic Arts Inc.",
             "date" : "Jul 29, 2022",
@@ -18,7 +20,8 @@
             "description" : "Having helped to complete the transition with our new CFO, Blake Jorgensen’s last day with Electronic Arts is today, July 29. We appreciate everything he has done for our company, and we wish him all the best."
         },
         {
-            "image" : "images/Section Three/EA News 3.png",
+            "id" : 3,
+            "image" : "images/Section Three/EANews/EA News 3.png",
             "alt" : "EA News 3",
             "title" : "Electronic Arts Inc.",
             "date" : "Jul 29, 2022",
@@ -26,7 +29,8 @@
             "description" : "Key changes in our Executive Leadership Team"
         },
         {
-            "image" : "images/Section Three/EA News 4.png",
+            "id" : 4,
+            "image" : "images/Section Three/EANews/EA News 4.png",
             "alt" : "EA News 4",
             "title" : "Electronic Arts Inc.",
             "date" : "Jul 19, 2022",
@@ -34,7 +38,8 @@
             "description" : "Technology is already at the center of every decision we make today, and as we look to the opportunities ahead of us, we want to weave it even more deeply into the fabric of how we operate."
         },
         {
-            "image" : "images/Section Three/EA News 5.png",
+            "id" : 5,
+            "image" : "images/Section Three/EANews/EA News 5.png",
             "alt" : "EA News 5",
             "title" : "Electronic Arts Inc.",
             "date" : "Jul 15, 2022",
@@ -42,7 +47,8 @@
             "description" : "New Update to Feature Sexual Orientation in Create a Sim"
         },
         {
-            "image" : "images/Section Three/EA News 6.png",
+            "id" : 6,
+            "image" : "images/Section Three/EANews/EA News 6.png",
             "alt" : "EA News 6",
             "title" : "Electronic Arts Inc.",
             "date" : "Jun 30, 2022",
